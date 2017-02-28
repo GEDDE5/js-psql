@@ -1,0 +1,24 @@
+{
+  "name": "js-psql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GEDDE5/js-psql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GEDDE5/js-psql/issues"
+  },
+  "homepage": "https://github.com/GEDDE5/js-psql#readme",
+  "dependencies": {
+    "knex": "^0.12.7",
+    "pg": "^6.1.2"
+  }
+}
