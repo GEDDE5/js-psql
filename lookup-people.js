@@ -6,20 +6,20 @@ const config = {
   password: 'secret'
 };
 
+const client = new pg.Client(config);
+
 const input = process.argv.length === 3 && process.argv[2];
 
 if(!input){
   console.error('Error: Please provide a first or last name');
 }
 
-const client = new pg.Client(config);
-
 function notify(result) {
 
   const display = {
     empty:
       () => {
-        if(!result.length) {
+        if(!result.rows) {
           console.log(`Found ${result.length} person(s) by the name '${input}'`);
           return true;
         } else {
