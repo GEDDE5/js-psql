@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,8 @@
   "homepage": "https://github.com/GEDDE5/js-psql#readme",
   "dependencies": {
     "knex": "^0.12.7",
-    "pg": "^6.1.2"
-  }
+    "pg": "^6.1.2",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
